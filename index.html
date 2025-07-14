@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jingbin Training Project</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    h1 { color: #2c3e50; }
+    .container { max-width: 600px; margin: auto; }
+    button { padding: 8px 16px; margin-top: 16px; }
+    .result { margin-top: 24px; color: #27ae60; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Jingbin Training Project</h1>
+    <p>Welcome to the frontend page. Click the button below to simulate calling the backend API (AppSync).</p>
+    <button onclick="callApi()">Call AppSync API</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script>
+    function callApi() {
+      document.getElementById('result').innerText = 'AppSync API called (demo, no real request)';
+    }
+  </script>
+</body>
+</html>
